@@ -1,0 +1,23 @@
+{
+  "name": "processor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "prismadb": "*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "private": true,
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
