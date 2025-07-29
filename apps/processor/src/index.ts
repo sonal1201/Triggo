@@ -25,6 +25,14 @@ async function main() {
         value: r.zaprunsId,
       })),
     });
+
+    await prismaclient.zapRunOutbox.deleteMany({
+      where: {
+        id: {
+          in: pendingRows.map(r => r.id),
+        },
+      },
+    });
   }
 }
 
